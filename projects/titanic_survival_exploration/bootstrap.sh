@@ -16,4 +16,6 @@ cat >> /home/vagrant/.bashrc << END
 PATH=/opt/anaconda/bin:\$PATH
 END
 
-apt-get install python-pip
+apt-get install -y python-pip
+
+jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser titanic_survival_exploration.ipynb
